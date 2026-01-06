@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneTapNews - The World at Your Fingertips</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <i class="fa-solid fa-newspaper" style="color: #eb4a7b"></i>
+            OneTap<span class="gradient-text">News</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#showcase">Screens</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download App</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div
+        class="container"
+        style="display: flex; align-items: center; flex-wrap: wrap"
+      >
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Stay Updated,<br />Just
+            <span class="gradient-text">One Tap</span> Away.
+          </h1>
+          <p class="hero-subtitle">
+            Experience the world at your fingertips. OneTapNews simplifies your
+            daily information flow by curating the most important stories from
+            around the globe.
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary"
+              ><i class="fab fa-google-play"></i> Google Play</a
+            >
+            <a
+              href="#"
+              class="btn"
+              style="border: 1px solid white; margin-left: 10px"
+              ><i class="fab fa-apple"></i> App Store</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="phone-mockup">
+            <div class="mockup-screen"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose <span class="gradient-text">OneTapNews</span>?</h2>
+          <p style="color: var(--text-muted)">
+            Built with modern technology for a seamless reading experience.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-layer-group feature-icon"></i>
+            <h3>Cross-Platform</h3>
+            <p>
+              Built with Flutter, ensuring a smooth, high-speed experience on
+              both iOS and Android with a single codebase.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-bolt feature-icon"></i>
+            <h3>Real-Time Data</h3>
+            <p>
+              Instant access to breaking news and headlines powered by robust
+              API integration, keeping you up-to-date 24/7.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <h3>Secure Architecture</h3>
+            <p>
+              Reliable user authentication and data management backed by
+              Firebase (Auth & Firestore) for maximum security.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-mobile-alt feature-icon"></i>
+            <h3>Modern UI</h3>
+            <p>
+              A clean, distraction-free interface designed for readability,
+              embodying the "One Tap" philosophy.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-comments feature-icon"></i>
+            <h3>Interactive Community</h3>
+            <p>
+              Dynamic comment system allowing users to engage with content and
+              share opinions in real-time.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-filter feature-icon"></i>
+            <h3>Smart Categorization</h3>
+            <p>
+              Efficient filtering (Technology, Sports, Finance) lets you find
+              exactly what you are looking for instantly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+      <div class="container">
+        <div class="section-header">
+          <h2>App <span class="gradient-text">Screenshots</span></h2>
+        </div>
+        <div class="screens-container">
+          <div class="screen-item">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: url('images/login.png') center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #777;
+              "
+            ></div>
+            <div class="screen-label">Login & Sign Up</div>
+          </div>
+          <div class="screen-item">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: url('images/home.png') center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #777;
+              "
+            ></div>
+            <div class="screen-label">News Feed</div>
+          </div>
+          <div class="screen-item">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: url('images/search.png') center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #777;
+              "
+            ></div>
+            <div class="screen-label">Smart Search</div>
+          </div>
+          <div class="screen-item">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: url('images/details.png') center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #777;
+              "
+            ></div>
+            <div class="screen-label">Article Details</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>OneTap<span class="gradient-text">News</span></h3>
+            <p style="color: var(--text-muted); max-width: 300px">
+              Simplifying your daily information flow. Fast, reliable, and
+              tailored to your interests.
+            </p>
+          </div>
+          <div class="contact-info">
+            <h4 style="margin-bottom: 20px">Contact Us</h4>
+            <p><i class="fas fa-envelope"></i> hevalvural007@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +90 543 382 92 81</p>
+            <p><i class="fas fa-globe"></i> www.onetapnews.com</p>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2026 OneTapNews. All Rights Reserved. Designed for Excellence.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
