@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OneTapNews - The World at Your Fingertips</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,20 +19,32 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <i class="fa-solid fa-newspaper" style="color: #eb4a7b"></i>
+            <i
+              class="fa-solid fa-newspaper"
+              style="color: #eb4a7b; margin-right: 8px"
+            ></i>
             OneTap<span class="gradient-text">News</span>
           </div>
-          <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#showcase">Screens</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+            <li><a href="#showcase" onclick="toggleMenu()">Screens</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li>
+              <a
+                href="https://github.com/hevalvural007/OneTapNews"
+                class="btn btn-primary"
+                style="padding: 10px 25px; margin-left: 10px"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </li>
           </ul>
-          <a
-            href="https://github.com/hevalvural007/OneTapNews"
-            class="btn btn-primary"
-            >Go to Github</a
-          >
+
+          <div class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars" style="color: white"></i>
+          </div>
         </nav>
       </div>
     </header>
@@ -40,7 +52,12 @@
     <section class="hero" id="hero">
       <div
         class="container"
-        style="display: flex; align-items: center; flex-wrap: wrap"
+        style="
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          height: 100%;
+        "
       >
         <div class="hero-content">
           <h1 class="hero-title">
@@ -56,13 +73,18 @@
             <a
               href="https://github.com/hevalvural007/OneTapNews"
               class="btn btn-primary"
-              ><i class="fab fa-github"></i> Github</a
             >
+              <i class="fab fa-android"></i> Download App
+            </a>
           </div>
         </div>
+
         <div class="hero-image">
           <div class="phone-mockup">
-            <div class="mockup-screen"></div>
+            <div
+              class="mockup-screen"
+              style="background-image: url('images/main.png')"
+            ></div>
           </div>
         </div>
       </div>
@@ -111,7 +133,7 @@
           </div>
           <div class="feature-card">
             <i class="fas fa-comments feature-icon"></i>
-            <h3>Interactive Community</h3>
+            <h3>Interactive</h3>
             <p>
               Dynamic comment system allowing users to engage with content and
               share opinions in real-time.
@@ -119,7 +141,7 @@
           </div>
           <div class="feature-card">
             <i class="fas fa-filter feature-icon"></i>
-            <h3>Smart Categorization</h3>
+            <h3>Smart Filters</h3>
             <p>
               Efficient filtering (Technology, Sports, Finance) lets you find
               exactly what you are looking for instantly.
@@ -141,13 +163,9 @@
                 width: 100%;
                 height: 100%;
                 background: url('images/login.png') center/cover;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #777;
               "
             ></div>
-            <div class="screen-label">Login & Sign Up</div>
+            <div class="screen-label">Login</div>
           </div>
           <div class="screen-item">
             <div
@@ -155,10 +173,6 @@
                 width: 100%;
                 height: 100%;
                 background: url('images/home.png') center/cover;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #777;
               "
             ></div>
             <div class="screen-label">News Feed</div>
@@ -169,13 +183,9 @@
                 width: 100%;
                 height: 100%;
                 background: url('images/search.png') center/cover;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #777;
               "
             ></div>
-            <div class="screen-label">Smart Search</div>
+            <div class="screen-label">Search</div>
           </div>
           <div class="screen-item">
             <div
@@ -183,13 +193,9 @@
                 width: 100%;
                 height: 100%;
                 background: url('images/details.png') center/cover;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #777;
               "
             ></div>
-            <div class="screen-label">Article Details</div>
+            <div class="screen-label">Details</div>
           </div>
         </div>
       </div>
@@ -200,21 +206,46 @@
         <div class="footer-content">
           <div class="footer-logo">
             <h3>OneTap<span class="gradient-text">News</span></h3>
-            <p style="color: var(--text-muted); max-width: 300px">
+            <p
+              style="
+                color: var(--text-muted);
+                max-width: 300px;
+                margin-top: 10px;
+              "
+            >
               Simplifying your daily information flow. Fast, reliable, and
               tailored to your interests.
             </p>
           </div>
           <div class="contact-info">
-            <h4 style="margin-bottom: 20px">Contact Us</h4>
-            <p><i class="fas fa-envelope"></i> hevalvural007@gmail.com</p>
-            <p><i class="fas fa-phone"></i> +90 543 382 9281</p>
+            <h4 style="margin-bottom: 20px; font-size: 1.2rem">Contact Us</h4>
+            <p>
+              <i
+                class="fas fa-envelope"
+                style="margin-right: 10px; color: #eb4a7b"
+              ></i>
+              hevalvural007@gmail.com
+            </p>
+            <p>
+              <i
+                class="fas fa-phone"
+                style="margin-right: 10px; color: #eb4a7b"
+              ></i>
+              +90 543 382 9281
+            </p>
           </div>
         </div>
         <div class="copyright">
-          &copy; 2026 OneTapNews. All Rights Reserved. Designed for Excellence.
+          &copy; 2026 OneTapNews. Designed by Heval Vural.
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
